@@ -43,22 +43,40 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 //for button https://developer.mozilla.org/en-US/docs/Archive/Events/checking
 
 const navlinks = document.querySelectorAll("a");
-navlinks[0].textContent = "Services";
-navlinks[1].textContent = "Product";
-navlinks[2].textContent = "Vision";
-navlinks[3].textContent = "Features";
-navlinks[4].textContent = "About";
-navlinks[5].textContent = "Contact";
+navlinks[0].textContent = siteContent['nav']['nav-item-1'];
+navlinks[1].textContent = siteContent['nav']['nav-item-2'];
+navlinks[2].textContent = siteContent['nav']['nav-item-3'];
+navlinks[3].textContent = siteContent['nav']['nav-item-4'];
+navlinks[4].textContent = siteContent['nav']['nav-item-5'];
+navlinks[5].textContent = siteContent['nav']['nav-item-6'];
+navlinks[0].style.color = 'green';
+navlinks[1].style.color='green';
+navlinks[2].style.color='green';
+navlinks[3].style.color='green';
+navlinks[4].style.color='green';
+navlinks[5].style.color='green';
+
+const newlink = document.createElement('bottom');
+newlink.textContent = 'Hi';
+newlink.style.color = 'green';
+
+const alpha = document.createElement('top');
+alpha.textContent = 'Hello';
+alpha.style.color = 'green';
+
+const navbar = document.querySelector('nav');
+navbar.append(newlink);
+navbar.prepend(alpha);
 
 const ctastuff = document.querySelectorAll("h1");
-ctastuff[0].textContent = "DOM is Awesome!";
+ctastuff[0].textContent = siteContent['cta']['h1'];
 
 const fourhead = document.querySelectorAll("h4");
-fourhead[0].textContent = "Features";
-fourhead[1].textContent = "About";
-fourhead[2].textContent = "Services";
-fourhead[3].textContent = "Product";
-fourhead[4].textContent = "Vision";
+fourhead[0].textContent = siteContent['main-content']['features-h4'];
+fourhead[1].textContent = siteContent['main-content']['about-h4'];
+fourhead[2].textContent = siteContent['main-content']['services-h4'];
+fourhead[3].textContent = siteContent['main-content']['product-h4'];
+fourhead[4].textContent = siteContent['main-content']['services-h4'];
 
 const content = document.querySelectorAll("p");
 content[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
