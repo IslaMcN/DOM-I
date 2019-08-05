@@ -40,3 +40,10 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+const navlinks = document.getElementsByTagName("a");
+const ctastuff = document.getElementsByTagName("h1", "button");
+const maincontentstuff = document.getElementsByTagName("div", "h4", "p");
+const contactstuff = document.getElementsByClassName("contact");
+const bot = documents.getElementsByTagName("footer");
