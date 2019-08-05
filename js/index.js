@@ -43,14 +43,26 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 //for button https://developer.mozilla.org/en-US/docs/Archive/Events/checking
 
 const navlinks = document.querySelectorAll("a");
+navlinks[0].textContent = "Services";
+navlinks[1].textContent = "Product";
+navlinks[2].textContent = "Vision";
+navlinks[3].textContent = "Features";
+navlinks[4].textContent = "About";
+navlinks[5].textContent = "Contact";
+
 const ctastuff = document.getElementsByTagName("h1");
 const maincontentstuff = document.getElementsByTagName("div", "h4", "p");
 const contactstuff = document.getElementsByClassName("contact");
 const bot = document.getElementsByTagName("footer");
-const ctaimg = document.getElementById("cta-img");
+
+const ctaimg = document.querySelector("#cta-img");
+ctaimg.setAttribute('src', 'img/header-img.png');
+
 const middleimg = document.getElementById("middle-img");
+
 const button = document.querySelector("button");
 button.textContent = "Get Started";
 button.addEventListener('click', event => {
   button.innerHTML = `Click count: ${event.detail}`;
 });
+
