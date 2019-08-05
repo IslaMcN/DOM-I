@@ -79,29 +79,29 @@ fourhead[3].textContent = siteContent['main-content']['product-h4'];
 fourhead[4].textContent = siteContent['main-content']['services-h4'];
 
 const content = document.querySelectorAll("p");
-content[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
-content[1].textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
-content[2].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
-content[3].textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
-content[4].textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+content[0].textContent = siteContent['main-content']['features-content'];
+content[1].textContent = siteContent['main-content']['about-content'];
+content[2].textContent = siteContent['main-content']['services-content'];
+content[3].textContent = siteContent['main-content']['product-content'];
+content[4].textContent = siteContent['main-content']['vision-content'];
 
 const middleImg = document.querySelector(".middle-img");
-middleImg.setAttribute('src','img/mid-page-accent.jpg');
+middleImg.setAttribute('src',siteContent['main-content']['middle-img-src']);
 
 
-fourhead[5].textContent = "Contact";
-content[5].textContent = "123 Way 456 Street Somewhere, USA";
-content[6].textContent = "1 (888) 888-8888";
-content[7].textContent = "sales@greatidea.io";
-content[8].textContent = "Copyright Great Idea! 2018";
+fourhead[5].textContent = siteContent['contact']['contact-h4'];
+content[5].textContent = siteContent['contact']['address'];
+content[6].textContent = siteContent['contact']['phone'];
+content[7].textContent = siteContent['contact']['email'];
+content[8].textContent = siteContent['footer']['copyright'];
 
 const ctaimg = document.querySelector("#cta-img");
-ctaimg.setAttribute('src', 'img/header-img.png');
+ctaimg.setAttribute('src', siteContent['cta']['img-src']);
 
 const middleimg = document.getElementById("middle-img");
 
 const button = document.querySelector("button");
-button.textContent = "Get Started";
+button.textContent = siteContent['cta']['button'];
 button.addEventListener('click', event => {
   button.innerHTML = `Click count: ${event.detail}`;
 });
