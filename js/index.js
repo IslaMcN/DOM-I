@@ -47,3 +47,5 @@ const ctastuff = document.getElementsByTagName("h1", "button");
 const maincontentstuff = document.getElementsByTagName("div", "h4", "p");
 const contactstuff = document.getElementsByClassName("contact");
 const bot = documents.getElementsByTagName("footer");
+const ctaimg = document.getElementById("cta-img");
+const middleimg = document.getElementById("middle-img");
