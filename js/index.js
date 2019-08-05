@@ -40,12 +40,17 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+//for button https://developer.mozilla.org/en-US/docs/Archive/Events/checking
 
-
-const navlinks = document.getElementsByTagName("a");
-const ctastuff = document.getElementsByTagName("h1", "button");
+const navlinks = document.querySelectorAll("a");
+const ctastuff = document.getElementsByTagName("h1");
 const maincontentstuff = document.getElementsByTagName("div", "h4", "p");
 const contactstuff = document.getElementsByClassName("contact");
-const bot = documents.getElementsByTagName("footer");
+const bot = document.getElementsByTagName("footer");
 const ctaimg = document.getElementById("cta-img");
 const middleimg = document.getElementById("middle-img");
+const button = document.querySelector("button");
+button.textContent = "Get Started";
+button.addEventListener('click', event => {
+  button.innerHTML = `Click count: ${event.detail}`;
+});
